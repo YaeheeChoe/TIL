@@ -18,5 +18,5 @@ Today I Learned
 
 # HTML
 ## Canvas
-[Javascript TextAnimation 만들기](https://github.com/YaeheeChoe/CanvasTextAnimation)  
+[Javascript TextAnimation 만들기](https://yaehee.oopy.io/a09be584-9713-45b8-b778-9f8ae3c7c30b)  
 [HTML Canvas로 도형을 그려보자](https://yaehee.oopy.io/4448fe4a-7a14-4d97-bd21-35d6f39de280)
