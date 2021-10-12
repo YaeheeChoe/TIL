@@ -6,12 +6,12 @@ Today I Learned
 - 배운 내용을 [블로그](https://yaehee.oopy.io/)에 업로드하고 해당 글을 링크합니다.
 - 관련된 프로젝트가 있는 경우 글에 링크합니다.
 - 새롭게 배운 내용 위주로 정리합니다.
-- 문제풀이는 블로그에 정리하고, 백준 풀이 파일은 [알고리즘 저장소](https://github.com/YaeheeChoe/TIL/blob/main/Algorithm)에 저장합니다.
+- 문제풀이는 블로그에 정리하고, 백준 풀이 파일은 [알고리즘 폴더](https://github.com/YaeheeChoe/TIL/blob/main/Algorithm)에 저장합니다.
 
 # Algorithm
 
 [문제풀이/해석 블로그 링크](https://yaehee.oopy.io/44a75ff9-2bef-4f04-994c-fd60bce9ca11)  
-[알고리즘 저장소](https://github.com/YaeheeChoe/TIL/tree/main/Algorithm)
+[알고리즘 폴더](https://github.com/YaeheeChoe/TIL/tree/main/Algorithm)
 
 # Javascript
 [자바스크립트 문장 끝에 세미콜론 쓰세요?](https://yaehee.oopy.io/d49b3620-1b0a-48a0-b509-3a1a5d6229a6)  
