@@ -8,10 +8,6 @@ Today I Learned
 - 새롭게 배운 내용 위주로 정리합니다.
 - 문제풀이는 블로그에 정리하고, 백준 풀이 파일은 [알고리즘 폴더](https://github.com/YaeheeChoe/TIL/blob/main/Algorithm)에 저장합니다.
 
-# Algorithm
-
-[문제풀이/해석 블로그 링크](https://yaehee.oopy.io/44a75ff9-2bef-4f04-994c-fd60bce9ca11)  
-[알고리즘 폴더](https://github.com/YaeheeChoe/TIL/tree/main/Algorithm)
 
 # Javascript
 [자바스크립트 문장 끝에 세미콜론 쓰세요?](https://yaehee.oopy.io/d49b3620-1b0a-48a0-b509-3a1a5d6229a6)  
@@ -21,3 +17,11 @@ Today I Learned
 [Javascript TextAnimation 만들기](https://yaehee.oopy.io/a09be584-9713-45b8-b778-9f8ae3c7c30b)  
 [HTML Canvas로 도형을 그려보자](https://yaehee.oopy.io/4448fe4a-7a14-4d97-bd21-35d6f39de280)  
 [JS Sound Visualizer 코드분석](https://yaehee.oopy.io/f1d96d07-153a-4dcc-ac8e-46b263326a2a)
+
+# CSS
+[CSS로 텍스트 타이핑 효과 만들기](https://yaehee.oopy.io/f5989809-1ad5-4eee-a357-ca9fe9eac69d)
+
+
+# Algorithm
+[문제풀이/해석 블로그 링크](https://yaehee.oopy.io/44a75ff9-2bef-4f04-994c-fd60bce9ca11)  
+[알고리즘 폴더](https://github.com/YaeheeChoe/TIL/tree/main/Algorithm)
