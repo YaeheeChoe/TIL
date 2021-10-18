@@ -7,6 +7,11 @@ Today I Learned
 - 관련된 프로젝트가 있는 경우 글에 링크합니다.
 - 새롭게 배운 내용 위주로 정리합니다.
 
+# 한 수 가르쳐 주세요🤯
+- 글에 오류가 있는 경우
+- 질문이나 건의사항이 있는 경우
+- 작성자에게 전하고 싶은 내용을 [이슈](https://github.com/YaeheeChoe/TIL/issues)에 적어주세요.
+
 # Javascript
 [자바스크립트 문장 끝에 세미콜론 쓰세요?](https://yaehee.oopy.io/d49b3620-1b0a-48a0-b509-3a1a5d6229a6)  
 [자바스크립트의 상속과 프로토타입 헷갈리는 용어 정리](https://yaehee.oopy.io/67d67ace-2186-45d0-9cbe-20033064ceee)  
