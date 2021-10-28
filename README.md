@@ -28,3 +28,6 @@ Today I Learned
 
 # Algorithm
 [문제풀이/해석 블로그 링크](https://yaehee.oopy.io/44a75ff9-2bef-4f04-994c-fd60bce9ca11)  
+
+# 개발 방법론
+[애자일 방법론](https://yaehee.oopy.io/f638ec5b-7ed5-4ba4-a628-9ac68c3651fe)
