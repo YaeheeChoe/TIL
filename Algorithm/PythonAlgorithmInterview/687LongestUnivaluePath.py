@@ -4,6 +4,7 @@ class TreeNode:
         self.left = left
         self.right = right
 class Solution:
+    result: int =0
     def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:
         def dfs(node):
             if not node:
