@@ -32,32 +32,30 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const name = '뤼액트';
-  const number = 0;
+  const name = '뤼액트'
+  const number =0
   return (
     <>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
         <p //조건연산자
         >
           {name && '리액트입니다'}
         </p>
         <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <>
-            {
-              name === '리액트' ? (
-                <h1>Learn React</h1>
-              ) : (
-                <h1>//주석을 이렇게 쓰시면 안됩니다.</h1>
-              )
-              /*주석2 */
-            }
-          </>
+        <>
+          {name ==='리액트'? 
+            <h1>Learn React</h1>
+          :
+            <h1>//주석을 이렇게 쓰시면 안됩니다.</h1>
+            /*주석2 */
+          }
+        </>
         </a>
       </header>
     </>
@@ -70,17 +68,13 @@ export default App;
 ### && 연산
 
 ```jsx
-name = undefinded;
-{
-  name && '리액트입니다';
-}
+name = undefinded
+{name && '리액트입니다'}
 ```
 
 ```jsx
-const number = 0;
-{
-  number && '리액트입니다';
-}
+const number =0
+{number && '리액트입니다'}
 ```
 
 ### 삼항연산자 if
@@ -98,4 +92,18 @@ if문 대신 삼항연산자를 사용해 조건부 렌더링이 가능하다
 <p // 이렇게는 쌉가능
 ></p>
 /*요롷게도*/
+```
+
+# 질문
+
+# 피드백
+
+잘 하셨습니다. 예제코드도 오늘 공부하신 부분을 대부분 보여주도록 잘 작성하셨고요.
+
+책에서 다루지 않은 부분을 추가하자면, 다음과 같은 연산자도 사용할 수 있습니다.
+
+```jsx
+x && <span>x는 truthy한 값입니다.(null, undefined, 0, false 등의 값이 아님)</span>
+x || <span>x는 falsy한 값입니다.(null, undefined, 0, false 등의 값임)</span>
+x ?? <span>x는 null 또는 undefined입니다.(||과 유사하지만 false는 포함하지 않음)</span>
 ```
