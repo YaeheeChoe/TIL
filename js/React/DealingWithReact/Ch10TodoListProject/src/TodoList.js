@@ -1,5 +1,8 @@
 import TodoListItem from "./TodoListItem";
 import styled from "styled-components";
+import React, {useCallback} from "react";
+import {List} from 'react-virtualized'
+
 const List = styled.div`
 	min-height: 320px;
 	max-height: 513px;
@@ -15,4 +18,4 @@ const TodoList = ({todos,onRemove,onToggle}) => {
 	)
 }
 
-export default TodoList
+export default React.memo(TodoList)
