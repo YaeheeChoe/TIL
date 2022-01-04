@@ -4,6 +4,7 @@ import {
 	MdRemoveCircleOutline,
 } from "react-icons/md";
 import styled from "styled-components";
+import React from "react";
 
 const ListItem = styled.div`
 	padding: 1rem;
@@ -54,4 +55,4 @@ const TodoListItem = ({todo,onRemove,onToggle}) => {
 	)
 }
 
-export default TodoListItem
+export default React.memo(TodoListItem)
