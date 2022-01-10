@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const NewsItemBlock = styled.div`
   display: flex;
@@ -30,9 +30,9 @@ const NewsItemBlock = styled.div`
   & + & {
     margin-top: 3rem;
   }
-`;
+`
 const NewsItem = ({ article }) => {
-  const { title, description, url, urlToImage } = article;
+  const { title, description, url, urlToImage } = article
   return (
     <NewsItemBlock>
       {urlToImage && (
@@ -51,7 +51,7 @@ const NewsItem = ({ article }) => {
         <p>{description}</p>
       </div>
     </NewsItemBlock>
-  );
-};
+  )
+}
 
-export default NewsItem;
+export default NewsItem

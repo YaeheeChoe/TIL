@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
 const categories = [
   {
@@ -31,7 +31,7 @@ const categories = [
     name: 'technology',
     text: '기술',
   },
-];
+]
 
 const CategoriesBlock = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ const CategoriesBlock = styled.div`
     width: 100%;
     overflow-x: auto;
   }
-`;
+`
 
 const Category = styled(NavLink)`
   font-size: 1.125rem;
@@ -68,7 +68,7 @@ const Category = styled(NavLink)`
   & + & {
     margin-left: 1rem;
   }
-`;
+`
 const Categories = () => {
   return (
     <CategoriesBlock>
@@ -82,7 +82,7 @@ const Categories = () => {
         </Category>
       ))}
     </CategoriesBlock>
-  );
-};
+  )
+}
 
-export default Categories;
+export default Categories
