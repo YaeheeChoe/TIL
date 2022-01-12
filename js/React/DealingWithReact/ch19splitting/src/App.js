@@ -1,22 +1,26 @@
 import logo from './logo.svg'
 import './App.css'
-import { Suspense } from 'react/cjs/react.production.min'
 import React from 'react'
 import { useState } from 'react'
-const SplitMe = React.lazy(() => import('./SplitMe'))
+import loadable from '@loadable/component'
+const SplitMe = loadable(() => import('./SplitMe'), {
+  fallback: <div>loading...</div>,
+})
 
 function App() {
   const [visible, setVisible] = useState(false)
   const onClick = () => {
     setVisible(!visible)
   }
+  const onMouseOver = () => {
+    SplitMe.preload()
+  }
   return (
     <>
-      <p onClick={onClick}>Hello js!</p>
-      <Suspense fallback={<div>loading...</div>}>
-        {' '}
-        {visible && <SplitMe />}{' '}
-      </Suspense>
+      <p onClick={onClick} onMouseOver={onMouseOver}>
+        Hello js!
+      </p>
+      {visible && <SplitMe />}
     </>
   )
 }
