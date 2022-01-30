@@ -31,6 +31,7 @@ export const register = async (ctx) => {
     await user.save()
     // 응답할 데이터에서 hashedPassword필드 제거
     ctx.body = user.serialize()
+    //토큰사용
     const token = user.generateToken()
     ctx.cookies.set('access_token', token, {
       maxAge: 1000 * 60 * 60 * 24 * 7,
@@ -67,5 +68,16 @@ export const login = async (ctx) => {
     ctx.throw(500, e)
   }
 }
-export const check = async (ctx) => {}
-export const logout = async (ctx) => {}
+export const check = async (ctx) => {
+  const { user } = ctx.state
+
+  if (!user) {
+    ctx.status = 401
+    return
+  }
+  ctx.body = user
+}
+export const logout = async (ctx) => {
+  ctx.cookies.set('access_token')
+  ctx.status = 204
+}

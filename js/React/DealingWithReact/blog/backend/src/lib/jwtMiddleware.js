@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken'
-const jwtMiddleware = (ctx, next) => {
+import User from '../models/user'
+const jwtMiddleware = async (ctx, next) => {
   const token = ctx.cookies.get('access_token')
   if (!token) {
     return next()
@@ -10,7 +11,16 @@ const jwtMiddleware = (ctx, next) => {
       _id: decoded._id,
       username: decoded.username,
     }
-    console.log(decoded)
+    const now = Math.floor(Date.now() / 1000)
+    //토큰 유효기간 3일 미만이면 재발급
+    if (decoded.exp - now < 60 * 60 * 24 * 3) {
+      const user = await User.findById(decoded._id)
+      const token = user.generateToken()
+      ctx.cookies.set('access_token', token, {
+        maxAge: 1000 * 60 * 60 * 24 * 7,
+        httpOnly: true,
+      })
+    }
     return next()
   } catch (e) {
     return next()
