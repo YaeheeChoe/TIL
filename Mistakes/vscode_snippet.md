@@ -1,5 +1,5 @@
 # VSCode Snippet doesn't work
-VSCode의 스니펫이 적용 안되는 오류
+VSCode의 스니펫이 적용 안되는 오류   
 리액트 공부하다가  
 VSCode user snippet을 제작하려고
 File-> Preference -> User snippets의 javascriptreact.json 파일에
