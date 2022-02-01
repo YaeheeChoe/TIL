@@ -145,7 +145,7 @@ export const list = async (ctx) => {
 
 # 질문
 
-이전부터 ctrl 함수의 인자로 넘어온 ctx를 통해 cookie등에 엑세스하고있는데요, 이 ctx가 정확히 무엇을 가리키고있는 것인가요? 
+이전부터 ctrl 함수의 인자로 넘어온 ctx를 통해 cookie등에 엑세스하고있는데요, 이 ctx가 정확히 무엇을 가리키고있는 것인가요?
 
 →찾아본 결과 ctx는 Context의 줄임말로 웹 요청과 응답에 관한 정보를 지니고 있다. 라고 합니다. 요게 맞나요? 좋은 자료 있으면 추천 부탁드려요
 
@@ -176,9 +176,10 @@ app.use(jwtMiddleware())
 app.use(jwtMiddleware)
 ```
 
-app.use에 jwtMiddleware()를 넣어주면 에러가 뜨는 이유는 무엇인가요?
-
+Q. app.use에 jwtMiddleware()를 넣어주면 에러가 뜨는 이유는 무엇인가요?
 객체와 인스턴스의 차이에 의해서 발생하는 에러였던 건가요?
+
+A. 말 그대로 jwtMiddleware는 함수가 아닌데 호출하려고해서 에러뜬거예용
 
 ### 앗!
 
@@ -187,5 +188,3 @@ jwtmiddleware에서 ctx.status(...)에 user정보 기록해놓고
 ctrl에서 state에서 user접근하려고 하는 어처구니없는 실수를 저질렀다
 
 # 피드백
-
-(이 부분은 가르쳐주는 사람이 예제코드와 배움의 진척을 보고 따로 작성함)
